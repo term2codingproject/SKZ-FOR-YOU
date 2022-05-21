@@ -66,3 +66,8 @@ nav .container .nav-items li a:hover{
   background: rgba(0,0,0,0.3);
   z-index: -1;
 }
+.content{
+  position: absolute;
+  top: 30%;
+  left: 4%;
+}
