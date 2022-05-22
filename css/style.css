@@ -5,14 +5,6 @@
   box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
 }
-.logo{
-  position: absolute;
-  top: 5;
-  left: 5;
-  height: 4vh;
-  width: 100%;
-  image: url('https://logos-world.net/wp-content/uploads/2020/12/Lays-Logo.png');
-}
 .pic{
   position: absolute;
   top: 0;
@@ -38,7 +30,7 @@
 .content{
   position: absolute;
   top: 750px;
-  left: 340px;
+  left: 500px;
 }
 .content h1{
   float: left;
