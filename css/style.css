@@ -5,45 +5,6 @@
   box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
 }
-nav{
-  line-height: 70px;
-  background: #000;
-  padding: 0 80px;
-  box shadow: 0px 3px 10px rgba(0,0,0,0.3);
-}
-nav .container{
-  display: flex;
-  text-decoration: none;
-  justify-content: space-between;
-  align-items: center;
-}
-nav .container h3{
-  font-size: 1.7em;
-  font-weight: 800;
-  text-transform: uppercase;
-  font-style: italic;
-  color: #fff;
-}
-nav .container .nav-items{
-  display: flex;
-  text-decoration: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 40%;
-}
-nav .container .nav-items li{
-  list-style: none;
-}
-nav .container .nav-items li a{
-  text-decoration: none;
-  font-size: 1.1em;
-  font-weight: 500;
-  color: #fff;
-  text-transform: uppercase;
-}
-nav .container .nav-items li a:hover{
-  color: #1abc9c;
-}
 .pic{
   position: absolute;
   top: 0;
