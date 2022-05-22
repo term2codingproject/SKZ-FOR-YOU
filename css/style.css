@@ -26,11 +26,11 @@
   background: rgba(0,0,0,0.3);
   z-index: -1;
 }
-.content{
-  position: center;
-}
 .content h1{
+  color: #fff;
   font-size: 125px;
   line-height: 100px;
-  color: #fff;
+  position: relative;
+  top: 125px;
+  left: 50px;
 }
