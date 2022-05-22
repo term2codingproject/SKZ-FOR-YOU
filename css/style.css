@@ -11,7 +11,7 @@
   left: 0;
   height: 100vh;
   width: 100%;
-  background-image: url('https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111.jpg');
+  background-image: url('https://assets.teenvogue.com/photos/6238ca8e258ee25d7a069d95/master/pass/Stray%20Kids_ODDINARY_2.jpg');
   background-size: cover;
   background-position: center;
   z-index: -2;
@@ -27,11 +27,10 @@
   z-index: -1;
 }
 .content{
-  position: absolute;
-  text-position: center;
+  position: center;
 }
 .content h1{
-  font-size: 200px;
+  font-size: 125px;
   line-height: 100px;
   color: #fff;
 }
