@@ -18,29 +18,12 @@ nav .container{
   align-items: center;
 }
 nav .logo{
-  image: url('https://logos-world.net/wp-content/uploads/2020/12/Lays-Logo.png');
-  height: 80px;
+  position: absolute;
+  top: 5;
+  left: 5;
+  height: 4vh;
   width: 100%;
-}
-nav .container .nav-items{
-  display: flex;
-  text-decoration: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 40%;
-}
-nav .container .nav-items li{
-  list-style: none;
-}
-nav .container .nav-items li a{
-  text-decoration: none;
-  font-size: 1.1em;
-  font-weight: 500;
-  color: #fff;
-  text-transform: uppercase;
-}
-nav .container .nav-items li a:hover{
-  color: #1abc9c;
+  image: url('https://logos-world.net/wp-content/uploads/2020/12/Lays-Logo.png');
 }
 .pic{
   position: absolute;
