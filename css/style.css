@@ -29,12 +29,12 @@
 }
 .content{
   position: absolute;
-  top: 30%;
-  left: 4%;
+  top: 750px;
+  left: 500px;
 }
 .content h1{
   float: left;
-  font-size: 90px;
+  font-size: 150px;
   line-height: 100px;
   color: #fff;
 }
