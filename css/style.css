@@ -15,7 +15,6 @@
   background-size: cover;
   background-position: center;
   z-index: -2;
-  
 }
 .overlay{
   position: absolute;
@@ -29,8 +28,7 @@
 }
 .content{
   position: absolute;
-  top: 750px;
-  left: 500px;
+  text-position: center;
 }
 .content h1{
   font-size: 200px;
