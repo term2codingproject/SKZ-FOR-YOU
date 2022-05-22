@@ -68,8 +68,8 @@ nav .container .nav-items li a:hover{
 }
 .content{
   position: absolute;
-  top: 75%;
-  left: 34%;
+  top: 750px;
+  left: 340px;
 }
 .content h1{
   float: left;
