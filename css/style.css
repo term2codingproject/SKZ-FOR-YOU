@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
+  overflow-x: hidden;
 }
 .pic{
   position: absolute;
@@ -38,4 +39,5 @@
   position: relative;
   top: 600px;
   left: 500px;
+  overflow-x: hidden;
 }
