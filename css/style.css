@@ -18,12 +18,9 @@ nav .container{
   align-items: center;
 }
 nav .logo{
-  image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1200px-Logo_NIKE.svg.png');
-  font-size: 1.7em;
-  font-weight: 800;
-  text-transform: uppercase;
-  font-style: italic;
-  color: #fff;
+  image: url('https://logos-world.net/wp-content/uploads/2020/12/Lays-Logo.png');
+  height: 80px;
+  width: 100%;
 }
 nav .container .nav-items{
   display: flex;
