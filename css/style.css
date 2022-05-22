@@ -14,6 +14,7 @@
   background-image: url('https://assets.teenvogue.com/photos/6238ca8e258ee25d7a069d95/master/pass/Stray%20Kids_ODDINARY_2.jpg');
   background-size: cover;
   background-position: center;
+  z-index: -2;
 }
 .overlay{
   position: absolute;
@@ -23,6 +24,7 @@
   width: 100%;
   object-fit: cover;
   background: rgba(0,0,0,0.3);
+  z-index: -1;
 }
 .content h1{
   color: #fff;
