@@ -11,7 +11,7 @@
   left: 0;
   height: 100vh;
   width: 100%;
-  background-image: url(/images/realbg.png);
+  background-image: url(images/realbg.png);
   background-size: cover;
   background-position: center;
   z-index: -2;
