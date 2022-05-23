@@ -11,7 +11,7 @@
   left: 0;
   height: 100vh;
   width: 100%;
-  background-image: url('https://static.stereogum.com/uploads/2022/03/Stray-Kids_ODDINARY_2-1648675983.jpg');
+  background-image: src"images/realbg.png";
   background-size: cover;
   background-position: center;
   z-index: -2;
