@@ -27,7 +27,7 @@
 }
 .content{
   position: absolute;
-  top: 670px;
+  top: 710px;
   left: 515px;
 }
 .content h1{
@@ -37,8 +37,8 @@
 }
 .button{
   position: absolute;
-  top: 780px;
-  left: 650px;
+  top: 840px;
+  left: 720px;
 }
 .button h6{
   font-size: 30px;
