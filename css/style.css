@@ -33,7 +33,7 @@
 .content h1{
   font-size: 82px;
   color: #fff;
-  font-family: Tahoma, sans-serif;
+  font-family: "Franklin Gothic Medium";
 }
 .button{
   position: absolute;
@@ -43,5 +43,5 @@
 .button h6{
   font-size: 30px;
   color: #fff;
-  font-family: Tahoma, sans-serif;
+  font-family: "Lucida Grande";
 }
