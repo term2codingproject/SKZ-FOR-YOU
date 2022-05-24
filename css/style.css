@@ -29,19 +29,19 @@
 }
 .content{
   position: absolute;
-  top: 575px;
+  top: 545px;
   left: 515px;
 }
 .content h1{
-  font-size: 72px;
+  font-size: 82px;
   color: #fff;
 }
 .button{
   position: absolute;
-  top: 580px;
-  left: 700px;
+  top: 630px;
+  left: 670px;
 }
 .button h6{
-  font-size: 14px;
+  font-size: 30px;
   color: #fff;
 }
