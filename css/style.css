@@ -33,15 +33,15 @@
   left: 515px;
 }
 .content h1{
-  font-size: 130px;
+  font-size: 72px;
   color: #fff;
 }
 .button{
   position: absolute;
-  top: 570px;
-  left: 719px;
+  top: 580px;
+  left: 700px;
 }
 .button h6{
-  font-size: 40px;
+  font-size: 14px;
   color: #fff;
 }
