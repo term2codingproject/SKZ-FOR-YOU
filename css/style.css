@@ -27,11 +27,11 @@
 }
 .content{
   position: absolute;
-  top: 710px;
+  top: 690px;
   left: 725px;
 }
 .content h1{
-  font-size: 82px;
+  font-size:120px;
   color: #fff;
   font-family: "Franklin Gothic Medium";
 }
