@@ -35,6 +35,9 @@
   color: #fff;
   font-family: "Franklin Gothic Medium";
 }
+a: link{
+  color: #fff;
+}
 .button{
   position: absolute;
   top: 840px;
@@ -45,9 +48,4 @@
   color: #fff;
   font-family: "Century Gothic";
   
-}
-a: link{
-  color: #fff;
-  background-color: transparent;
-  text-decoration: none;
 }
