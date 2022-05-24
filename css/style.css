@@ -46,7 +46,7 @@
   font-family: "Century Gothic";
   
 }
-a: .button h6{
+a: link{
   color: #fff;
   background-color: transparent;
   text-decoration: none;
