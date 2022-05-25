@@ -28,8 +28,8 @@
 }
 .content{
   position: relative;
-  top: 500px;
-  left: 500px;
+  top: 550px;
+  left: 510px;
 }
 .content h1{
   font-size:120px;
@@ -42,8 +42,8 @@ a{
 }
 .button{
   position: relative;
-  top: 500px;
-  left: 500px;
+  top: 520px;
+  left: 550px;
 }
 .button h6{
   font-size: 30px;
