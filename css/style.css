@@ -27,7 +27,7 @@
   z-index: -1;
 }
 .content{
-  position: absolute;
+  position: relative;
   top: 60%;
   left: 27%;
 }
@@ -41,7 +41,7 @@ a{
   text-decoration: none;
 }
 .button{
-  position: absolute;
+  position: relative;
   top: 79%;
   left: 44%;
 }
