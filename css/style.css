@@ -1,4 +1,4 @@
-<link rel="stylesheet" href='https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'>
+<link href="https://fonts.googleapis.com/css?family=Oswald|Advent+Pro" rel="stylesheet">
 *{
   margin: 0;
   padding: 0;
@@ -34,7 +34,7 @@
 .content h1{
   font-size:120px;
   color: #fff;
-  font-family: 'Bebas Neue';
+  font-family: 'Oswald';
 }
 a{
   color: #fff;
@@ -48,6 +48,6 @@ a{
 .button h6{
   font-size: 30px;
   color: #fff;
-  font-family: "Century Gothic";
+  font-family: 'Advent Pro';
   
 }
