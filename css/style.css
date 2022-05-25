@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue">
 *{
   margin: 0;
   padding: 0;
@@ -33,7 +34,7 @@
 .content h1{
   font-size:120px;
   color: #fff;
-  font-family: "Franklin Gothic Medium";
+  font-family: 'Bebas Neue', cursive;
 }
 a{
   color: #fff;
