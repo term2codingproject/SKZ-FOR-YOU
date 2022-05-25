@@ -34,7 +34,7 @@
 .content h1{
   font-size:120px;
   color: #fff;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
 }
 a{
   color: #fff;
@@ -48,6 +48,6 @@ a{
 .button h6{
   font-size: 30px;
   color: #fff;
-  font-family: 'Advent Pro';
+  font-family: 'Advent Pro', sans-serif;
   
 }
