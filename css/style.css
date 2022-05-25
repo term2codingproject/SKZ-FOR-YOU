@@ -27,8 +27,8 @@
 }
 .content{
   position: absolute;
-  top: 65%;
-  left: 60%;
+  top: 45%;
+  left: 45%;
 }
 .content h1{
   font-size:120px;
@@ -41,8 +41,8 @@ a{
 }
 .button{
   position: absolute;
-  top: 84%;
-  left: 84.5%;
+  top: 95%;
+  left: 75%;
 }
 .button h6{
   font-size: 30px;
