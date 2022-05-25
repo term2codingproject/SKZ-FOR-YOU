@@ -29,7 +29,7 @@
 .content{
   position: relative;
   top: 500px;
-  left: 50px;
+  left: 500px;
 }
 .content h1{
   font-size:120px;
@@ -43,7 +43,7 @@ a{
 .button{
   position: relative;
   top: 500px;
-  left: 70px;
+  left: 500px;
 }
 .button h6{
   font-size: 30px;
