@@ -5,6 +5,15 @@
   box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
 }
+.logo{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  image: url(images/logo.png);
+  z-index: -2;
+}
 nav{
   line-height: 70px;
   background: #242424;
