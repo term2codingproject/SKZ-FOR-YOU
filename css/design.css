@@ -11,7 +11,7 @@
   left: 0;
   height: 70px;
   width: 100%;
-  image: url(images/logo.png);
+  image: url('https://raw.githubusercontent.com/term2codingproject/SKZ-FOR-YOU/main/images/logo.png');
   z-index: -2;
 }
 nav{
