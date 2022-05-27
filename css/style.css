@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 .pic{
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   height: 100vh;
@@ -17,7 +17,7 @@
   
 }
 .overlay{
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   height: 100vh;
