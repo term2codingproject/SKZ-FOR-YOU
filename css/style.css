@@ -1,35 +1,51 @@
-<link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-
-.body {
-  background-image: url(https://cdn.discordapp.com/attachments/792468600338251798/979509171839971388/4CC1CAC1-21EB-4A0F-9891-6E71D6C27973.jpeg);
+<link href="https://fonts.googleapis.com/css?family=Oswald|Advent+Pro" rel="stylesheet">
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.pic{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url('https://raw.githubusercontent.com/term2codingproject/SKZ-FOR-YOU/main/images/Screenshot%202022-05-24%2012.29.43.png');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  z-index: -2;
+  
 }
-.h1 {
-  text-align: center;
-  color: white;
-  font-family: 'Bebas Neue', cursive;
-  font-size: 890%;
-  letter-spacing: 3px;
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  background: rgba(0,0,0,0.3);
+  z-index: -1;
+}
+.content{
   position: relative;
-  top: 100%
-  left: 100%;
+  top: 550px;
+  left: 510px;
 }
-.transbox {
-  margin: auto;
-  background-color: black;
-  width: 15%; 
-  opacity: 0.7;
-  border: 2px solid white;
-  padding: 10px;
+.content h1{
+  font-size:120px;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
 }
-.transbox p{
-  margin: auto;
-  text-align: center;
+a{
+  color: #fff;
+  text-decoration: none;
+}
+.button{
+  position: relative;
+  top: 540px;
+  left: 850px;
+}
+.button h6{
+  font-size: 30px;
+  color: #fff;
   font-family: 'Advent Pro', sans-serif;
-  font-weight: bold;
-  color: white;
-}
