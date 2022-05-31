@@ -1,51 +1,20 @@
-<link href="https://fonts.googleapis.com/css?family=Oswald|Advent+Pro" rel="stylesheet">
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+nav .container .nav-items{
+  display: flex;
+  text-decoration: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
 }
-.pic{
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  background-image: url('https://raw.githubusercontent.com/term2codingproject/SKZ-FOR-YOU/main/images/Screenshot%202022-05-24%2012.29.43.png');
-  background-size: cover;
-  background-position: center;
-  z-index: -2;
-  
+nav .container .nav-items li{
+  list-style: none;
 }
-.overlay{
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100%;
-  object-fit: cover;
-  background: rgba(0,0,0,0.3);
-  z-index: -1;
-}
-.content{
-  position: relative;
-  top: 550px;
-  left: 510px;
-}
-.content h1{
-  font-size:120px;
-  color: #fff;
-  font-family: 'Oswald', sans-serif;
-}
-a{
-  color: #fff;
+nav .container .nav-items li a{
   text-decoration: none;
-}
-.button{
-  position: relative;
-  top: 540px;
-  left: 850px;
-}
-.button h6{
-  font-size: 30px;
+  font-size: 1.1em;
+  font-weight: 500;
   color: #fff;
-  font-family: 'Advent Pro', sans-serif;
+  text-transform: uppercase;
+}
+nav .container .nav-items li a:hover{
+  color: #1abc9c;
+}
