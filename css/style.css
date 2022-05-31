@@ -1,4 +1,6 @@
-@import url ('https://fonts.googleapis.com/css2?family=Abel&family=Exo+2&display=swap')
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abel&family=Exo+2&family=Water+Brush&display=swap" rel="stylesheet">
 
  *{
   margin: 0;
@@ -24,7 +26,7 @@ nav .container h3{
   text-transform: uppercase;
   font-style: italic;
   color: #fff;
-  font-family: 'Abel', sans-serif;
+  font-family: 'Water Brush', cursive;
 }
 nav .container .nav-items{
   display: flex;
