@@ -1,13 +1,15 @@
- *{
+@import url ('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins',sans-serif;
-
+}
 nav{
   line-height: 70px;
-  background: #282424;
+  background: #000;
   padding: 0 80px;
+  box shadow: 0px 3px 10px rgba(0,0,0,0.3);
 }
 nav .container{
   display: flex;
@@ -21,7 +23,6 @@ nav .container h3{
   text-transform: uppercase;
   font-style: italic;
   color: #fff;
-  font-family: 'Water Brush', cursive;
 }
 nav .container .nav-items{
   display: flex;
@@ -39,10 +40,31 @@ nav .container .nav-items li a{
   font-weight: 500;
   color: #fff;
   text-transform: uppercase;
-  font-family: 'Abel', sans-serif;
 }
 nav .container .nav-items li a:hover{
-  color: #dd393b;
+  color: #1abc9c;
+}
+.pic{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url('https://iso.500px.com/wp-content/uploads/2016/03/stock-photo-142984111.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+  
+}
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  background: rgba(0,0,0,0.3);
+  z-index: -1;
 }
 .content{
   position: absolute;
@@ -54,5 +76,4 @@ nav .container .nav-items li a:hover{
   font-size: 90px;
   line-height: 100px;
   color: #fff;
-  font-family: 'Exo 2', sans-serif;
 }
