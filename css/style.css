@@ -1,4 +1,5 @@
-@import url ('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap" rel="stylesheet">
 *{
   margin: 0;
   padding: 0;
@@ -21,8 +22,8 @@ nav .container h3{
   font-size: 1.7em;
   font-weight: 800;
   text-transform: uppercase;
-  font-style: italic;
   color: #fff;
+  font-family: 'Abel', sans-serif;
 }
 nav .container .nav-items{
   display: flex;
@@ -40,6 +41,7 @@ nav .container .nav-items li a{
   font-weight: 500;
   color: #fff;
   text-transform: uppercase;
+  font-family: 'Abel', sans-serif;
 }
 nav .container .nav-items li a:hover{
   color: #1abc9c;
