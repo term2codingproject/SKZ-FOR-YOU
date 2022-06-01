@@ -21,11 +21,11 @@ nav ul li{
 }
 nav ul li a {
  color: white;
- font-size: 17px;
+ font-size: 25px;
  text-transform: uppercase;
+ position: center;
 }
 nav-items {
  position:absolute;
  top: 5%;
- left: 50%;
 }
