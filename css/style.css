@@ -24,3 +24,8 @@ nav ul li a {
  font-size: 17px;
  text-transform: uppercase;
 }
+nav-items {
+ position:absolute;
+ top: 5%;
+ left: 50%;
+}
