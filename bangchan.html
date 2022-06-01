@@ -4,7 +4,54 @@
 <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
 <style>
     body {
+        margin: 0;
+        padding: 0;
         background-color: black;
+    }
+    nav {
+        width: 100%;
+        background: #252525ff;
+        overflow: auto;
+    }
+    .header-links {
+        padding: 0;
+        margin: 0 0 0 150px;
+        list-style: none;
+    }
+    .header-links li {
+        float: right;
+    }
+    .logo img {
+        position: absolute; top: 10px; left: 30px;
+        width: 120px;
+        padding: 5px;
+    }
+    nav a {
+        width: 150px;
+        display: flex;
+        padding: 30px;
+        text-decoration: none;
+        font-family: 'Abel', sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 1.3em;
+    }
+    .header-links li a:link { 
+        text-decoration: none; 
+        }
+    .header-links li a:hover:not(.active) {
+        color: #dd393b;
+    }
+    .active {
+        font-weight: bold;
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .sticky + .content {
+        padding-top: 10x;
     }
     h1 {
         position: absolute; top: 72%; left: 7%;
@@ -19,40 +66,53 @@
         font-size: 1.5em;
         direction: rtl;
     }
-    img {
+    .bangchan img {
         position: absolute; top: 24%; left: 37%;
         border: 2px solid white;
         
     }
-    ul {
+    .member-links {
         list-style-type: none;
         font-size: 1.5em;
         position: absolute; top: 20%; left: 70%;
     }
-    li a {
+    .member-links li a {
         color: #efefef;
         font-family: 'Abel', sans-serif;
     }
-    li a:link { 
+    .member-links a:link { 
         text-decoration: none; 
     }
-    li a:visited { 
+    .member-links a:visited { 
         text-decoration: none; 
     }
-    li a:hover { 
+    .member-links a:hover { 
         color: #dd393b; 
     }
-    .active { 
+    .member-links + .active { 
         color:#dd393b;
         font-size: 1.45em;
     }
 </style>
 </head>
 <body>
+    <div class="navbar" id="myNavbar">
+        <div class="logo"><a href="#"><img src="https://raw.githubusercontent.com/term2codingproject/SKZ-FOR-YOU/main/images/skz%20logo%20white.png"></a>
+        </div>
+        <nav>
+            <ul class="header-links">
+                <li><a href="https://straykids.jype.com/">OFFICIAL PAGE</a></li>
+                <li><a href="about.html">PROFILE</a></li>
+                <li><a href="oddinary.html">MUSIC</a></li>
+                <li><a href="https://www.youtube.com/playlist?list=PL2HLJ87twWI3H5CwvG_xTOiHJ-muq8vrq">MVs</a></li>
+            </ul>
+        </nav>
+    </div>
     <h1>-BANG CHAN-</h1>
     <p>DOB: October 3, 1997 <br> HEIGHT: 1.71 m <br> FULL NAME: Christopher Bang</p>
-    <img src="https://raw.githubusercontent.com/term2codingproject/SKZ-FOR-YOU/main/images/BC.png" alt="BANG CHAN CIRCUS" width="450">
-    <ul>
+    <div class="bangchan"><img src="https://raw.githubusercontent.com/term2codingproject/SKZ-FOR-YOU/main/images/BC.png" alt="BANG CHAN CIRCUS" width="450">
+    </div>
+    <ul class="member-links">
         <li><a href="bangchan.html">BANG CHAN</a></li>
         <li><a href="leeknow.html">LEE KNOW</a></li>
         <li><a href="changbin.html">CHANGBIN</a></li>
@@ -61,5 +121,20 @@
         <li><a href="felix.html">FELIX</a></li>
         <li><a href="seunngmin.html">SEUNGMIN</a></li>
         <li><a href="i.n.html">I.N</a></li>
-      </ul>
+    </ul>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("myNavbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+    </script>
 </body>
+</html>
