@@ -24,7 +24,9 @@ nav ul li a {
  font-size: 25px;
  text-transform: uppercase;
  position: center;
- position: absolute;
+}
+nav-items {
+  position: absolute;
  top: 1%;
- left: 0%
+ left: 1%
 }
