@@ -46,29 +46,9 @@
         color:#dd393b;
         font-size: 1.45em;
     }
-    .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-    }
-    .sticky + .content {
-        padding-top: 10x;
-    }
 </style>
 </head>
 <body>
-    <div class="navbar" id="myNavbar">
-        <div class="logo"><a href="#"><img src="https://raw.githubusercontent.com/term2codingproject/SKZ-FOR-YOU/main/images/skz%20logo%20white.png"></a>
-        </div>
-        <nav>
-            <ul class="header-links">
-                <li><a href="https://straykids.jype.com/">OFFICIAL PAGE</a></li>
-                <li><a href="about.html">PROFILE</a></li>
-                <li><a href="oddinary.html">MUSIC</a></li>
-                <li><a href="https://www.youtube.com/playlist?list=PL2HLJ87twWI3H5CwvG_xTOiHJ-muq8vrq">MVs</a></li>
-            </ul>
-        </nav>
-    </div>
     <h1>-LEE KNOW-</h1>
     <p>DOB: October 25, 1998 <br> HEIGHT: 1.72 m <br> FULL NAME: Lee Minho</p>
         </p>
@@ -83,18 +63,4 @@
         <li><a href="seungmin.html">SEUNGMIN</a></li>
         <li><a href="i.n.html">I.N</a></li>
       </ul>
-    <script>
-        window.onscroll = function() {myFunction()};
-        
-        var navbar = document.getElementById("myNavbar");
-        var sticky = navbar.offsetTop;
-        
-        function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            navbar.classList.add("sticky")
-          } else {
-            navbar.classList.remove("sticky");
-          }
-        }
-    </script> 
 </body>
