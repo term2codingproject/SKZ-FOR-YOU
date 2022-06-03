@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-CA">
+<html lang="en-CA"></html>
 <head>
 <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
 <style>
@@ -36,37 +36,45 @@ body {
         text-align: center;
         font-size: 1.3em;
     }
+    .dropdown {
+        float: right;
+        overflow: auto;
+    }
+    .dropdown .dropbtn {
+        font-size: 1.3em;  
+        outline: none;
+        border: none;
+        color: white;
+        padding: 30px;
+        background-color: #252525ff;
+        font-family: 'Abel', sans-serif;
+        margin: 0;
+        position: absolute; left: 40%;
+    }
+    .navbar a:hover, .dropdown:hover .dropbtn {
+        color: #dd393b;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute; 
+        background-color: #d9d9d9;
+        z-index: 1;
+}
+    .dropdown-content a {
+        color: black;
+        padding: 14px;
+        text-decoration: none;
+        text-align: left;
+}
+    .dropdown:hover .dropdown-content {
+        display: block;
+}
     .header-links li a:link { 
         text-decoration: none; 
         }
     .header-links li a:hover:not(.active) {
         color: #dd393b;
     }
-        .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
     .active {
         font-weight: bold;
     }
@@ -87,15 +95,19 @@ body {
         <nav>
             <ul class="header-links">
                 <li><a href="https://straykids.jype.com/">OFFICIAL PAGE</a></li>
-                      <div class="dropdown">
-    <button class="dropbtn">PROFILE 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="about.html">Link 1</a>
-      <a href="oddinary.html">Link 2</a>
-    </div>
-  </div> 
+                <li><a href="about.html">PROFILE</a></li>
+                <li><a href="https://www.youtube.com/playlist?list=PL2HLJ87twWI3H5CwvG_xTOiHJ-muq8vrq">MVs</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">MUSIC 
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="#">ODDINARY</a>
+                      <a href="#">Christmas EveL</a>
+                      <a href="#">NOEASY</a>
+                    </div>
+                </div> 
+            </ul>
+        </nav>
     </div>
     <script>
         window.onscroll = function() {myFunction()};
