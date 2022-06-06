@@ -66,17 +66,42 @@ body {
         position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%);
         z-index: -1;
     }
-    .album-name p {
+    .dropbtn {
         color: white;
         border: 1px solid white;
         padding: 15px;
         font-family: 'Advent Pro', sans-serif;
         font-size: 1.2em;
-        text-align: center;
-        width: 15%;
-        position: absolute; top: 20%; left: 50%; transform: translate(-50%, -50%);
+        width: 210%;
         background-color: black;
         z-index: -1;
+    }
+    .dropdown {
+        position: absolute; top: 23%; left: 45%; transform: translate(-50%, -50%);
+        display: inline-block;
+        margin-left: 15px;
+        z-index: -1;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 210%;
+        z-index: 1;
+    }   
+    .dropdown-content a {
+        color: black;
+        padding: 14px;
+        text-decoration: none;
+        display: block;
+        font-family: 'Abel', sans-serif;
+        font-size: 1.1em;
+    }
+    .dropdown-content a:hover {
+        background-color: #f1f1f1
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
     }
     .information p {
         color: #cccccc;
@@ -335,14 +360,21 @@ body {
             <ul class="header-links">
                 <li><a href="https://straykids.jype.com/">OFFICIAL PAGE</a></li>
                 <li><a href="about.html">PROFILE</a></li>
-                <li><a href="oddinary.html"><b>MUSIC</b></a></li>
+                <li><a href="oddinary.html">MUSIC</a></li>
                 <li><a href="https://www.youtube.com/playlist?list=PL2HLJ87twWI3H5CwvG_xTOiHJ-muq8vrq">MVs</a></li>
             </ul>
         </nav>
     </div>
     <div class="main" id="section1">
         <div class="oddinary"><a href="#"><img src="https://raw.githubusercontent.com/term2codingproject/SKZ-FOR-YOU/main/images/ODDINARY.webp"></a></div>
-        <div class="album-name"><p>ODDlNARY</p></div>
+        <div class="dropdown">
+            <button class="dropbtn">ODDlNARY</button>
+            <div class="dropdown-content">
+            <a href="#">ODDlNARY</a>
+            <a href="#">Christmas EveL</a>
+            <a href="#">NOEASY</a>
+            </div>
+          </div>
         <div class="information"><p>lNFORMATlON</p></div>
         <div class="arrow"><a href="#section2">˯</a></div>
     </div>
