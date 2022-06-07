@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-CA"></html>
+<html lang="en-CA">
 <head>
 <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap" rel="stylesheet">
@@ -66,17 +66,41 @@ body {
         position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%);
         z-index: -1;
     }
-    .album-name p {
+    .dropbtn {
         color: white;
         border: 1px solid white;
         padding: 15px;
         font-family: 'Advent Pro', sans-serif;
         font-size: 1.2em;
-        text-align: center;
-        width: 15%;
-        position: absolute; top: 20%; left: 50%; transform: translate(-50%, -50%);
+        width: 210%;
         background-color: black;
         z-index: -1;
+    }
+    .dropdown {
+        position: absolute; top: 23%; left: 45%; transform: translate(-50%, -50%);
+        display: inline-block;
+        margin-left: 15px;
+        z-index: -1;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 210%;
+    }   
+    .dropdown-content a {
+        color: black;
+        padding: 14px;
+        text-decoration: none;
+        display: block;
+        font-family: 'Abel', sans-serif;
+        font-size: 1.1em;
+    }
+    .dropdown-content a:hover {
+        background-color: #f1f1f1
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
     }
     .information p {
         color: #cccccc;
@@ -88,7 +112,7 @@ body {
         width: 15%;
         position: absolute; top: 93%; left: 50%; transform: translate(-50%, -50%);
         background-color: black;
-        z-index: -1;
+        z-index: -2;
     }
     .arrow a {
         color: #cccccc;
@@ -97,7 +121,7 @@ body {
         text-align: center;
         width: 15%;
         position: absolute; top: 97%; left: 50%; transform: translate(-50%, -50%);
-        z-index: -1;
+        z-index: -2;
     }
     #section2 {
         background-color: black;
@@ -109,7 +133,7 @@ body {
         text-align: center;
         width: 50%;
         position: absolute; top: 109%; left: 50%; transform: translate(-50%, -50%);
-        z-index: -1;
+        z-index: -2;
     }
     .release-date p {
         color: white;
@@ -118,7 +142,7 @@ body {
         text-align: center;
         width: 15%;
         position: absolute; top: 119%; left: 50%; transform: translate(-50%, -50%);
-        z-index: -1;
+        z-index: -2;
     }
     .tracks-title p {
         color:#00873e;
@@ -135,7 +159,7 @@ body {
         width: 15%;
         text-align: center;
         position: absolute; top: 131.8%; left: 50%; transform: translate(-50%, -50%);
-        z-index: -1;
+        z-index: -2;
     }
     .purchasing-title {
         color:#00873e;
@@ -173,32 +197,32 @@ body {
         width: 15%;
         line-height: 2;
         position: absolute; top: 139%; left: 46%;
-        z-index: -1;
+        z-index: -2;
     }
     .spotify img {
         width: 20px;
         position: absolute; top: 141.95%; left: 44%;
-        z-index: -1;
+        z-index: -2;
     }
     .amazon-music img {
         width: 24px;
         position: absolute; top: 147.4%; left: 44%;
-        z-index: -1;
+        z-index: -2;
     }
     .apple-music img {
         width: 22px;
         position: absolute; top: 151.5%; left: 44%;
-        z-index: -1;
+        z-index: -2;
     }
     .youtube-music img {
         width: 22px;
         position: absolute; top: 156.35%; left: 44%;
-        z-index: -1;
+        z-index: -2;
     }
     .deezer img {
         width: 22px;
         position: absolute; top: 161.4%; left: 44%;
-        z-index: -1;
+        z-index: -2;
     }
     .purchase-link1 p {
         color: #d9d9d9;
@@ -335,20 +359,37 @@ body {
             <ul class="header-links">
                 <li><a href="https://straykids.jype.com/">OFFICIAL PAGE</a></li>
                 <li><a href="about.html">PROFILE</a></li>
-                <li><a href="oddinary.html"><b>MUSIC</b></a></li>
+                <li><a href="oddinary.html">MUSIC</a></li>
                 <li><a href="https://www.youtube.com/playlist?list=PL2HLJ87twWI3H5CwvG_xTOiHJ-muq8vrq">MVs</a></li>
             </ul>
         </nav>
     </div>
     <div class="main" id="section1">
         <div class="christmas-evel"><a href="#"><img src="https://raw.githubusercontent.com/term2codingproject/SKZ-FOR-YOU/main/images/CHRISTMAS.webp"></a></div>
-        <div class="album-name"><p>CHRlSTMAS EVEL</p></div>
+        <div class="dropdown">
+            <button class="dropbtn">Christmas EveL</button>
+            <div class="dropdown-content">
+            <a href="oddinary.html">ODDlNARY</a>
+            <a href="christmasevel.html">Christmas EveL</a>
+            <a href="noeasy.html">NOEASY</a>
+            <a href="allin.html">All In</a>
+            <a href="inlife.html">In Life</a>
+            <a href="golive.html">Go Live</a>
+            <a href="levanter.html">Clé: Levanter</a>
+            <a href="yellowwood.html">Clé 2: Yellow Wood</a>
+            <a href="miroh.html">Clé 1: Miroh</a>
+            <a href="iamyou.html">I am YOU</a>
+            <a href="iamwho.html">I am WHO</a>
+            <a href="iamnot.html">I am NOT</a>
+                <a href="mixtape.html">Mixtape</a>
+            </div>
+          </div>
         <div class="information"><p>lNFORMATlON</p></div>
         <div class="arrow"><a href="#section2">˯</a></div>
     </div>
     <div class="main" id="section2">
         <div class="streaming-title"><p>STREAMING SERVICES</p></div>
-          <div class="heading"><h1>-CHRISTMAS EVEL-</h1></div>
+        <div class="heading"><h1>-CHRISTMAS EVEL-</h1></div>
         <div class="release-date"><p>29/11/21</p></div>
         <div class="tracks-title"><p>TRACK LIST</p></div>
         <div class="purchasing-title"><p>PURCHASING</p></div>
@@ -362,14 +403,14 @@ body {
         <div class="youtube-music"><a href="https://music.youtube.com/playlist?list=OLAK5uy_mC9r4yudAzsF1BuWl623IDDtj1nkaB_g4"><img src="https://raw.githubusercontent.com/term2codingproject/SKZ-FOR-YOU/main/images/youtubelogo.png"></a></div>
         <div class="deezer"><a href="https://www.deezer.com/en/album/292339982"><img src="https://raw.githubusercontent.com/term2codingproject/SKZ-FOR-YOU/main/images/deezerlogo.png"></a></div>
         <div class="purchase-link1"><a href="https://kpopmart.com/stray-kids/12054-26443-stray-kids-holiday-special-single-christmas-evel-limited-ver.html?SubmitCurrency=1&id_currency=3"><p>KPOPMART</p></a></div>
-        <div class="album-version1"><p>[LIMITED VER.]</p></div>
+        <div class="album-version1"><p>[LIMTIED VER.]</p></div>
         <div class="price1"><p>&emsp; $17.33 CAD</p></div>
         <div class="purchase-link2"><a href="https://www.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=97716&goods_no=69629"><p>KTOWN4U</p></a></div>
         <div class="album-version2"><p>[STANDARD VER.]</p></div>
         <div class="price2"><p>&emsp; $8.40 USD</p></div>
         <div class="purchase-link3"><a href="https://www.ktown4u.com/iteminfo?grp_no=1741898&fanc_goods_no=96949&goods_no=69488"><p>KTOWN4U</p></a></div>
         <div class="album-version3"><p>[LIMITED VER.]</p></div>
-        <div class="price3"><p>&emsp; $8.40 USD</p></div>
+        <div class="price3"><p>&emsp; $8.40 CAD</p></div>
         <div class="purchase-link4"><a href="https://www.amazon.ca/Stray-Kids-Christmas-Standard-Pre-Order/dp/B09LTVJDVV/ref=sr_1_5?crid=O0R3SQ9XXM6J&keywords=christmas+eveL&qid=1653425255&sprefix=christmas+evel%2Caps%2C94&sr=8-5"><p>AMAZON</p></a></div>
         <div class="album-version4"><p>[STANDARD VER.]</p></div>
         <div class="price4"><p>&emsp; $35.99 CAD</p></div>
