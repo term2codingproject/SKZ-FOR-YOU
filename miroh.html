@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-CA"></html>
+<html lang="en-CA">
 <head>
 <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap" rel="stylesheet">
@@ -66,17 +66,41 @@ body {
         position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%);
         z-index: -1;
     }
-    .album-name p {
+    .dropbtn {
         color: white;
         border: 1px solid white;
         padding: 15px;
         font-family: 'Advent Pro', sans-serif;
         font-size: 1.2em;
-        text-align: center;
-        width: 15%;
-        position: absolute; top: 20%; left: 50%; transform: translate(-50%, -50%);
+        width: 210%;
         background-color: black;
         z-index: -1;
+    }
+    .dropdown {
+        position: absolute; top: 23%; left: 45%; transform: translate(-50%, -50%);
+        display: inline-block;
+        margin-left: 15px;
+        z-index: -1;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 210%;
+    }   
+    .dropdown-content a {
+        color: black;
+        padding: 14px;
+        text-decoration: none;
+        display: block;
+        font-family: 'Abel', sans-serif;
+        font-size: 1.1em;
+    }
+    .dropdown-content a:hover {
+        background-color: #f1f1f1
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
     }
     .information p {
         color: #cccccc;
@@ -88,7 +112,7 @@ body {
         width: 15%;
         position: absolute; top: 93%; left: 50%; transform: translate(-50%, -50%);
         background-color: black;
-        z-index: -1;
+        z-index: -2;
     }
     .arrow a {
         color: #cccccc;
@@ -97,7 +121,7 @@ body {
         text-align: center;
         width: 15%;
         position: absolute; top: 97%; left: 50%; transform: translate(-50%, -50%);
-        z-index: -1;
+        z-index: -2;
     }
     #section2 {
         background-color: black;
@@ -109,7 +133,7 @@ body {
         text-align: center;
         width: 50%;
         position: absolute; top: 109%; left: 50%; transform: translate(-50%, -50%);
-        z-index: -1;
+        z-index: -2;
     }
     .release-date p {
         color: white;
@@ -118,7 +142,7 @@ body {
         text-align: center;
         width: 15%;
         position: absolute; top: 119%; left: 50%; transform: translate(-50%, -50%);
-        z-index: -1;
+        z-index: -2;
     }
     .tracks-title p {
         color:#dd393b;
@@ -135,7 +159,7 @@ body {
         width: 15%;
         text-align: center;
         position: absolute; top: 131.8%; left: 50%; transform: translate(-50%, -50%);
-        z-index: -1;
+        z-index: -2;
     }
     .purchasing-title {
         color:#dd393b;
@@ -173,32 +197,32 @@ body {
         width: 15%;
         line-height: 2;
         position: absolute; top: 139%; left: 46%;
-        z-index: -1;
+        z-index: -2;
     }
     .spotify img {
         width: 20px;
         position: absolute; top: 141.95%; left: 44%;
-        z-index: -1;
+        z-index: -2;
     }
     .amazon-music img {
         width: 24px;
         position: absolute; top: 147.4%; left: 44%;
-        z-index: -1;
+        z-index: -2;
     }
     .apple-music img {
         width: 22px;
         position: absolute; top: 151.5%; left: 44%;
-        z-index: -1;
+        z-index: -2;
     }
     .youtube-music img {
         width: 22px;
         position: absolute; top: 156.35%; left: 44%;
-        z-index: -1;
+        z-index: -2;
     }
     .deezer img {
         width: 22px;
         position: absolute; top: 161.4%; left: 44%;
-        z-index: -1;
+        z-index: -2;
     }
     .purchase-link1 p {
         color: #d9d9d9;
@@ -335,26 +359,43 @@ body {
             <ul class="header-links">
                 <li><a href="https://straykids.jype.com/">OFFICIAL PAGE</a></li>
                 <li><a href="about.html">PROFILE</a></li>
-                <li><a href="oddinary.html"><b>MUSIC</b></a></li>
+                <li><a href="oddinary.html">MUSIC</a></li>
                 <li><a href="https://www.youtube.com/playlist?list=PL2HLJ87twWI3H5CwvG_xTOiHJ-muq8vrq">MVs</a></li>
             </ul>
         </nav>
     </div>
     <div class="main" id="section1">
         <div class="miroh"><a href="#"><img src="https://raw.githubusercontent.com/term2codingproject/SKZ-FOR-YOU/main/images/MIROH.webp"></a></div>
-        <div class="album-name"><p>CLÉ 1: MIROH</p></div>
+        <div class="dropdown">
+            <button class="dropbtn">Clé 1: Miroh</button>
+            <div class="dropdown-content">
+            <a href="oddinary.html">ODDlNARY</a>
+            <a href="christmasevel.html">Christmas EveL</a>
+            <a href="noeasy.html">NOEASY</a>
+            <a href="allin.html">All In</a>
+            <a href="inlife.html">In Life</a>
+            <a href="golive.html">Go Live</a>
+            <a href="levanter.html">Clé: Levanter</a>
+            <a href="yellowwood.html">Clé 2: Yellow Wood</a>
+            <a href="miroh.html">Clé 1: Miroh</a>
+            <a href="iamyou.html">I am YOU</a>
+            <a href="iamwho.html">I am WHO</a>
+            <a href="iamnot.html">I am NOT</a>
+                <a href="mixtape.html">Mixtape</a>
+            </div>
+          </div>
         <div class="information"><p>lNFORMATlON</p></div>
         <div class="arrow"><a href="#section2">˯</a></div>
     </div>
     <div class="main" id="section2">
         <div class="streaming-title"><p>STREAMING SERVICES</p></div>
-          <div class="heading"><h1>-CLÉ 1: MIROH-</h1></div>
+        <div class="heading"><h1>-CLÉ 1: MIROH-</h1></div>
         <div class="release-date"><p>25/03/20</p></div>
         <div class="tracks-title"><p>TRACK LIST</p></div>
         <div class="purchasing-title"><p>PURCHASING</p></div>
         <div class="vl1"></div>
         <div class="vl2"></div>
-        /* +-<div class="track-list"><p>01 &emsp; ENTRANCE <br> 02 &emsp; MIROH <br> 03 &emsp; VICTORY SONG <br> 04 &emsp; MAZE OF MEMORIES <br> 05 &emsp; BOXER <br> 06 &emsp; CHRONOSAURUS <br> 07 &emsp; 19</p></div>
+        <div class="track-list"><p>01 &emsp; ENTRANCE <br> 02 &emsp; MIROH <br> 03 &emsp; VICTORY SONG <br> 04 &emsp; MAZE OF MEMORIES <br> 05 &emsp; BOXER <br> 06 &emsp; CHRONOSAURUS <br> 07 &emsp; 19</p></div>
         <div class="streaming-services"><p>SPOTIFY <br> AMAZON MUSIC <br> APPLE MUSIC <br> YOUTUBE MUSIC <br> DEEZER</p></div>
         <div class="spotify"><a href="https://open.spotify.com/album/3s6RbqkTprnGwKpoUSYL00?si=tASwmxpxRdy-ISrfUah2ag"><img src="https://raw.githubusercontent.com/term2codingproject/SKZ-FOR-YOU/main/images/spotifylogo.png"></a></div>
         <div class="amazon-music"><a href="https://music.amazon.ca/albums/B09RPHDKRF?marketplaceId=A2EUQ1WTGCTBG2&musicTerritory=CA&ref=dm_sh_RjVGriQLkBrvZtLrLOUGSS5VP"><img src="https://raw.githubusercontent.com/term2codingproject/SKZ-FOR-YOU/main/images/amazonlogo.png"></a></div>
@@ -373,7 +414,7 @@ body {
         <div class="purchase-link4"><a href="http://www.musickorea.com/product/STRAY-KIDS-Cl%C3%A9-1-MIROH-Limited-Edition-/73069/cid/381"><p>MUSICKOREA</p></a></div>
         <div class="album-version4"><p>[LIMITED VER.]</p></div>
         <div class="price4"><p>&emsp; $13.13 USD</p></div>
-  </div>
+    </div>
     <script>
         window.onscroll = function() {myFunction()};
         
