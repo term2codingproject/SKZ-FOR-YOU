@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Advent+Pro&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap" rel="stylesheet">
+<style>
+html {
+    scroll-behavior: smooth;
+    }
+body {
+        margin: 0;
+        padding: 0;
+        background-color: black;
+    }
+    nav {
+        width: 100%;
+        background: #252525ff;
+        overflow: auto;
+    }
+    .header-links {
+        padding: 0;
+        margin: 0 0 0 150px;
+        list-style: none;
+    }
+    .header-links li {
+        float: right;
+    }
+    .logo img {
+        position: absolute; top: 10px; left: 30px;
+        width: 120px;
+        padding: 5px;
+    }
+    nav a {
+        width: 150px;
+        display: flex;
+        padding: 30px;
+        text-decoration: none;
+        font-family: 'Abel', sans-serif;
+        color: white;
+        text-align: center;
+        font-size: 1.3em;
+    }
+    .header-links li a:link { 
+        text-decoration: none; 
+        }
+    .header-links li a:hover:not(.active) {
+        color: #dd393b;
+    }
+    .active {
+        font-weight: bold;
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    .sticky + .content {
+        padding-top: 10x;
+    }
+    #section1 {
+        background-color: black;
+    }
+    .circus img {
+        border: white solid 1px;
+        position: absolute; top: 60%; left: 50%; transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+    .dropbtn {
+        color: white;
+        border: 1px solid white;
+        font-family: 'Advent Pro', sans-serif;
+        font-size: 1.2em;
+        background-color: black;
+        width: 250px;
+        text-align: center;
+        padding: 15px;
+    }
+    .dropdown {
+        position: absolute; top: 23%; left: 50%; transform: translate(-50%, -50%);
+        display: inline-block;
+        z-index: -1;
+        text-align: center;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 100%;
+    }    
+    .dropdown-content a {
+        color: black;
+        padding: 14px;
+        text-decoration: none;
+        display: block;
+        font-family: 'Abel', sans-serif;
+        font-size: 1.1em;
+    }
+    .dropdown-content a:hover {
+        background-color: #f1f1f1
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .information p {
+        color: #cccccc;
+        border: 1px solid black;
+        padding: 15px;
+        font-family: 'Advent Pro', sans-serif;
+        font-size: 1em;
+        text-align: center;
+        width: 15%;
+        position: absolute; top: 93%; left: 50%; transform: translate(-50%, -50%);
+        background-color: black;
+        z-index: -2;
+    }
+    .arrow a {
+        color: #cccccc;
+        font-family: 'Advent Pro', sans-serif;
+        font-size: 1em;
+        text-align: center;
+        width: 15%;
+        position: absolute; top: 97%; left: 50%; transform: translate(-50%, -50%);
+        z-index: -2;
+    }
+    #section2 {
+        background-color: black;
+    }
+    .heading h1 {
+        color: #ec5c5c;
+        font-family: 'Exo 2', sans-serif;
+        font-size: 3.5em;
+        text-align: center;
+        width: 50%;
+        position: absolute; top: 109%; left: 50%; transform: translate(-50%, -50%);
+        z-index: -2;
+    }
+    .release-date p {
+        color: white;
+        font-family: 'Exo 2', sans-serif;
+        font-size: 0.9em;
+        text-align: center;
+        width: 15%;
+        position: absolute; top: 119%; left: 50%; transform: translate(-50%, -50%);
+        z-index: -2;
+    }
+    .tracks-title p {
+        color:#ec5c5c;
+        font-family: 'Abel', sans-serif;
+        font-size: 1.2em;
+        width: 15%;
+        position: absolute; top: 130%; left: 13%;
+        z-index: -1;
+    }
+    .streaming-title p {
+        color:#ec5c5c;
+        font-family: 'Abel', sans-serif;
+        font-size: 1.2em;
+        width: 15%;
+        text-align: center;
+        position: absolute; top: 131.8%; left: 50%; transform: translate(-50%, -50%);
+        z-index: -2;
+    }
+    .purchasing-title {
+        color:#ec5c5c;
+        font-family: 'Abel', sans-serif;
+        font-size: 1.2em;
+        width: 15%;
+        position: absolute; top: 130%; left: 79%;
+        z-index: -1;
+    }
+    .vl1 {
+        border-left: 1px solid #595959;
+        height: 400px;
+        position: absolute; top: 128%; left: 33%;
+        z-index: -1;
+    }
+    .vl2 {
+        border-right: 1px solid #595959;
+        height: 400px;
+        position: absolute; top: 128%; left: 68%;
+        z-index: -1;
+    }
+    .track-list {
+        color:#d9d9d9;
+        font-family: 'Abel', sans-serif;
+        font-size: 1em;
+        width: 15%;
+        line-height: 2;
+        position: absolute; top: 139%; left: 13%;
+        z-index: -1;
+    }
+    .streaming-services {
+        color:#d9d9d9;
+        font-family: 'Abel', sans-serif;
+        font-size: 1em;
+        width: 15%;
+        line-height: 2;
+        position: absolute; top: 139%; left: 46%;
+        z-index: -2;
+    }
+    .spotify img {
+        width: 20px;
+        position: absolute; top: 141.95%; left: 44%;
+        z-index: -2;
+    }
+    .amazon-music img {
+        width: 24px;
+        position: absolute; top: 147.4%; left: 44%;
+        z-index: -2;
+    }
+    .apple-music img {
+        width: 22px;
+        position: absolute; top: 151.5%; left: 44%;
+        z-index: -2;
+    }
+    .youtube-music img {
+        width: 22px;
+        position: absolute; top: 156.35%; left: 44%;
+        z-index: -2;
+    }
+    .deezer img {
+        width: 22px;
+        position: absolute; top: 161.4%; left: 44%;
+        z-index: -2;
+    }
+    .purchase-link1 p {
+        color: #d9d9d9;
+        font-family: 'Abel', sans-serif;
+        font-size: 1em;
+        width: 15%;
+        position: absolute; top: 139%; left: 79%;
+        text-decoration: underline;
+        z-index: -1;
+    }
+    .album-version1 p {
+        color:#d9d9d9;
+        font-family: 'Abel', sans-serif;
+        font-size: 0.8em;
+        width: 15%;
+        position: absolute; top: 139.9%; left: 83.2%;
+        z-index: -1;
+    }
+    .price1 p {
+        color:#d9d9d9;
+        font-family: 'Abel', sans-serif;
+        font-size: 0.9em;
+        width: 15%;
+        position: absolute; top: 144%; left: 80%;
+        z-index: -1;
+    }
+    .purchase-link2 p {
+        color: #d9d9d9;
+        font-family: 'Abel', sans-serif;
+        font-size: 1em;
+        width: 15%;
+        position: absolute; top: 149%; left: 79%;
+        text-decoration: underline;
+        z-index: -1;
+    }
+    .album-version2 p {
+        color:#d9d9d9;
+        font-family: 'Abel', sans-serif;
+        font-size: 0.8em;
+        width: 15%;
+        position: absolute; top: 149.9%; left: 83.5%;
+        z-index: -1;
+    }
+    .price2 p {
+        color:#d9d9d9;
+        font-family: 'Abel', sans-serif;
+        font-size: 0.9em;
+        width: 15%;
+        position: absolute; top: 154%; left: 80%;
+        z-index: -1;
+    }
+    .purchase-link3 p {
+        color: #d9d9d9;
+        font-family: 'Abel', sans-serif;
+        font-size: 1em;
+        width: 15%;
+        position: absolute; top: 159%; left: 79%;
+        text-decoration: underline;
+        z-index: -1;
+    }
+    .album-version3 p {
+        color:#d9d9d9;
+        font-family: 'Abel', sans-serif;
+        font-size: 0.8em;
+        width: 15%;
+        position: absolute; top: 159.9%; left: 86.3%;
+        z-index: -1;
+    }
+    .price3 p {
+        color:#d9d9d9;
+        font-family: 'Abel', sans-serif;
+        font-size: 0.9em;
+        width: 15%;
+        position: absolute; top: 164%; left: 80%;
+        z-index: -1;
+    }
+    .purchase-link4 p {
+        color: #d9d9d9;
+        font-family: 'Abel', sans-serif;
+        font-size: 1em;
+        width: 15%;
+        position: absolute; top: 169%; left: 79%;
+        text-decoration: underline;
+        z-index: -1;
+    }
+    .album-version4 p {
+        color:#d9d9d9;
+        font-family: 'Abel', sans-serif;
+        font-size: 0.8em;
+        width: 15%;
+        position: absolute; top: 169.9%; left: 84.5%;
+        z-index: -1;
+    }
+    .price4 p {
+        color:#d9d9d9;
+        font-family: 'Abel', sans-serif;
+        font-size: 0.9em;
+        width: 15%;
+        position: absolute; top: 174%; left: 80%;
+        z-index: -1;
+    }
+    .purchase-link5 p {
+        color: #d9d9d9;
+        font-family: 'Abel', sans-serif;
+        font-size: 1em;
+        width: 15%;
+        position: absolute; top: 179%; left: 79%;
+        text-decoration: underline;
+        z-index: -1;
+    }
+    .album-version5 p {
+        color:#d9d9d9;
+        font-family: 'Abel', sans-serif;
+        font-size: 0.8em;
+        width: 15%;
+        position: absolute; top: 179.9%; left: 86.5%;
+        z-index: -1;
+    }
+    .price5 p {
+        color:#d9d9d9;
+        font-family: 'Abel', sans-serif;
+        font-size: 0.9em;
+        width: 15%;
+        position: absolute; top: 184%; left: 80%;
+        z-index: -1;
+    }
+</style>
+</head>
+<body>
+    <div class="navbar" id="myNavbar">
+        <div class="logo"><a href="index.html"><img src="https://raw.githubusercontent.com/term2codingproject/SKZ-FOR-YOU/main/images/skz%20logo%20white.png"></a>
+        </div>
+        <nav>
+            <ul class="header-links">
+                <li><a href="https://straykids.jype.com/">OFFICIAL PAGE</a></li>
+                <li><a href="about.html">PROFILE</a></li>
+                <li><a href="oddinary.html">MUSIC</a></li>
+                <li><a href="https://www.youtube.com/playlist?list=PL2HLJ87twWI3H5CwvG_xTOiHJ-muq8vrq">MVs</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main" id="section1">
+        <div class="circus"><a href="#"><img src="https://raw.githubusercontent.com/term2codingproject/SKZ-FOR-YOU/main/images/circus.webp"></a></div>
+        <div class="dropdown">
+            <button class="dropbtn">CIRCUS</button>
+            <div class="dropdown-content">
+            <a href="circus.html">CIRCUS</a>
+            <a href="oddinary.html">ODDlNARY</a>
+            <a href="christmasevel.html">Christmas EveL</a>
+            <a href="noeasy.html">NOEASY</a>
+            <a href="allin.html">All In</a>
+            <a href="inlife.html">In Life</a>
+            <a href="golive.html">Go Live</a>
+            <a href="levanter.html">Clé: Levanter</a>
+            <a href="yellowwood.html">Clé 2: Yellow Wood</a>
+            <a href="miroh.html">Clé 1: Miroh</a>
+            <a href="iamyou.html">I am YOU</a>
+            <a href="iamwho.html">I am WHO</a>
+            <a href="iamnot.html">I am NOT</a>
+                <a href="mixtape.html">Mixtape</a>
+            </div>
+          </div>
+        <div class="information"><p>lNFORMATlON</p></div>
+        <div class="arrow"><a href="#section2">˯</a></div>
+    </div>
+    <div class="main" id="section2">
+        <div class="streaming-title"><p>STREAMING SERVICES</p></div>
+        <div class="heading"><h1>-CIRCUS-</h1></div>
+        <div class="release-date"><p>22/06/22</p></div>
+        <div class="tracks-title"><p>TRACK LIST</p></div>
+        <div class="purchasing-title"><p>PURCHASING</p></div>
+        <div class="vl1"></div>
+        <div class="vl2"></div>
+        <div class="track-list"><p>01 &emsp; Circus <br> 02 &emsp; Fairytale <br> 03 &emsp; Venom -Japanese ver.- (蜘蛛の糸) <br> 04 &emsp; Maniac -Japanese ver.- <br> 05 &emsp; Silent Cry -Japanese ver.- <br> 06 &emsp; Your Eyes</p></div>
+        <div class="streaming-services"><p>SPOTIFY <br> AMAZON MUSIC <br> APPLE MUSIC <br> YOUTUBE MUSIC <br> DEEZER</p></div>
+        <div class="spotify"><a href="https://open.spotify.com/album/5lBLKPJtpcRwd0tJFIMw8A"><img src="https://raw.githubusercontent.com/term2codingproject/SKZ-FOR-YOU/main/images/spotifylogo.png"></a></div>
+        <div class="amazon-music"><a href="https://music.amazon.ca/albums/B0B3JHNN9Y?marketplaceId=A2EUQ1WTGCTBG2&musicTerritory=CA&ref=dm_sh_wnX73iSNROU574BGL501KTIud"><img src="https://raw.githubusercontent.com/term2codingproject/SKZ-FOR-YOU/main/images/amazonlogo.png"></a></div>
+        <div class="apple-music"><a href="https://music.apple.com/us/album/circus-ep/1628537346"><img src="https://raw.githubusercontent.com/term2codingproject/SKZ-FOR-YOU/main/images/applelogo.png"></a></div>
+        <div class="youtube-music"><a href="https://music.youtube.com/playlist?list=OLAK5uy_mifMkm6SLQLfg3zWXxjN1i7rbmzwMCZvM&feature=share"><img src="https://raw.githubusercontent.com/term2codingproject/SKZ-FOR-YOU/main/images/youtubelogo.png"></a></div>
+        <div class="deezer"><a href="https://www.deezer.com/us/album/325760887"><img src="https://raw.githubusercontent.com/term2codingproject/SKZ-FOR-YOU/main/images/deezerlogo.png"></a></div>
+        <div class="purchase-link1"><a href="https://www.amazon.com/Circus-Regular-Stray-Kids/dp/B09WVHZ2SN"><p>AMAZON</p></a></div>
+        <div class="album-version1"><p>[REGULAR VER.]</p></div>
+        <div class="price1"><p>&emsp; $25.06 (+SHIPPING) CAD</p></div>
+        <div class="purchase-link2"><a href="https://www.cdjapan.co.jp/product/ESCL-5668"><p>CDJAPAN</p></a></div>
+        <div class="album-version2"><p>[LIMITED VER.]</p></div>
+        <div class="price2"><p>&emsp; $35.05 CAD</p></div>
+        <div class="purchase-link3"><a href="https://www.barnesandnoble.com/w/circus-stray-kids/38194125"><p>BARNES&NOBLE</p></a></div>
+        <div class="album-version3"><p>[REGULAR VER.]</p></div>
+        <div class="price3"><p>&emsp; $33.99 CAD</p></div>
+        <div class="purchase-link4"><a href="https://www.kpoptown.com/other-male-group/72757--japanese-edition-stray-kids-japan-2nd-mini-album-circus-1st-limited-edition-verb-cd.html"><p>KPOPTOWN</p></a></div>
+        <div class="album-version4"><p>[LIMITED VER.B]</p></div>
+        <div class="price4"><p>&emsp; $62.52 CAD</p></div>
+        <div class="purchase-link5"><a href="https://choicemusicla.com/products/stray-kids-circus-regular-version-japan-import"><p>CHOICEMUSICLA</p></a></div>
+        <div class="album-version5"><p>[REGULAR VER.]</p></div>
+        <div class="price5"><p>&emsp; $34.99 USD</p></div>
+    </div>
+    <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("myNavbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+    </script>
+</body>
+</html>
